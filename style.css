@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F3F1F0;
+    font-family: Inter, sans-serif;
+}
+
+
+/* ==================== Container ==================== */
+
+.container {
+    width: calc(100% - 200px);
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* ==================== Top Navbar ==================== */
+
+.top-navbar {
+    width: 100%;
+    height: 39px;
+
+    background-color: #ff7011;
+}
+
+.top-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-bar-contact {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.phone-section {
+    height: 100%;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #ff7011;
+}
+
+.phone-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.phone-number {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.top-divider {
+    width: 1px;
+    height: 24px;
+
+    background-color: #ffffff;
+}
+
+.contact-section {
+    height: 100%;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ff7011;
+}
+
+.contact-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* ==================== Main Navbar ==================== */
+
+.navbar {
+    width: 100%;
+    height: 88px;
+
+    background-color: #ffffff;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ==================== Logo ==================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-circle {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: #e55a1d;
+    border-radius: 50%;
+}
+
+.logo-image {
+    width: 50px;
+    height: 49px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.logo-title {
+    color: #e55a1d;
+
+    font-family: Outfit, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+
+    line-height: 23px;
+}
+
+.logo-subtitle {
+    color: #4b5563;
+
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 13px;
+    white-space: nowrap;
+}
+
+
+/* ==================== Navigation ==================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link {
+    padding: 12px 8px;
+
+    color: #1f2937;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-home {
+    color: #e55a1d;
+    font-weight: 700;
+}
+
+.nav-news {
+    color: #1f2937;
+    font-weight: 500;
+}
+
+
+/* ==================== Buttons ==================== */
+
+.login-button,
+.register-button {
+    height: 41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-button {
+    width: 104px;
+
+    background-color: #ffffff;
+    border: 2px solid #fcdfd6;
+
+    color: #e55a1d;
+}
+
+.register-button {
+    width: 109px;
+
+    background-color: #e55a1d;
+    border: none;
+
+    color: #ffffff;
+}
