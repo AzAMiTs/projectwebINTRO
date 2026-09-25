@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>เปิดรับสมัครนักศึกษาใหม่ 2570</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange: #F1651E;
+    --orange-dark: #D6540F;
+    --orange-light: #FFF3EC;
+    --peach: #FDF3EE;
+    --navy: #06263B;
+    --navy-2: #0C3A54;
+    --teal: #0E8C93;
+    --teal-dark: #095F66;
+    --yellow: #F4B400;
+    --pink: #E63E82;
+    --blue: #2E6FD9;
+    --ink: #22262B;
+    --ink-soft: #6B7280;
+    --card: #FFFFFF;
+    --page-bg: #F3F4F2;
+    --line: #ECE7E2;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html{ scroll-padding-top: env(safe-area-inset-top, 0px); }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --page-bg:#101314; --card:#1A1D1E; --ink:#EDEDED; --ink-soft:#A6ACAF; --line:#2A2E2F; --peach:#241C17; --orange-light:#2A1F18;
+    }
+  }
+  :root[data-theme="dark"]{
+    --page-bg:#101314; --card:#1A1D1E; --ink:#EDEDED; --ink-soft:#A6ACAF; --line:#2A2E2F; --peach:#241C17; --orange-light:#2A1F18;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Kanit', sans-serif;
+    background:var(--page-bg);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{text-decoration:none;color:inherit;}
+  ul{list-style:none;}
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  .overflow-x{overflow-x:auto;}
+
+  /* ---------- Topbar ---------- */
+  .topbar{
+    background:linear-gradient(90deg, var(--orange), var(--orange-dark));
+    color:#fff;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:flex-end;align-items:center;gap:18px;
+    padding-top:8px;padding-bottom:8px;
+    font-size:.82rem;
+  }
+  .topbar a{opacity:.95;display:flex;align-items:center;gap:6px;}
+  .topbar .divider{width:1px;height:14px;background:rgba(255,255,255,.4);}
+  .topbar .btn-mini{
+    background:rgba(255,255,255,.18);
+    padding:4px 14px;border-radius:999px;font-weight:500;
+  }
+
+  /* ---------- Header ---------- */
+  header.site{
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
+  }
+  header.site .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:14px;padding-bottom:14px;gap:20px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand .mark{
+    width:46px;height:46px;border-radius:50%;
+    border:2px solid var(--orange);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--orange);font-weight:700;font-size:.7rem;
+    flex:none;
+  }
+  .brand .name{line-height:1.3;}
+  .brand .name b{display:block;color:var(--orange);font-size:1.05rem;letter-spacing:.5px;}
+  .brand .name span{display:block;font-size:.68rem;color:var(--ink-soft);}
+
+  nav.main{display:flex;align-items:center;gap:26px;}
+  nav.main .links{display:flex;gap:24px;font-size:.92rem;color:var(--ink);}
+  nav.main .links a{opacity:.85;transition:opacity .15s;}
+  nav.main .links a:hover{opacity:1;color:var(--orange);}
+  .btn{
+    display:inline-block;padding:10px 22px;border-radius:999px;
+    font-size:.9rem;font-weight:500;white-space:nowrap;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:focus-visible{outline:3px solid var(--teal);outline-offset:2px;}
+  .btn-outline{border:1.5px solid var(--line);color:var(--ink);}
+  .btn-solid{background:var(--orange);color:#fff;box-shadow:0 6px 16px -6px rgba(241,101,30,.6);}
+  .btn-solid:hover{transform:translateY(-1px);}
+  .nav-toggle{display:none;background:none;border:0;font-size:1.4rem;color:var(--orange);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    background:var(--peach);
+    overflow:hidden;
+  }
+  .hero .wrap{
+    position:relative;z-index:2;
+    display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px;
+    padding-top:56px;padding-bottom:40px;
+  }
+  .hero-deco{
+    position:absolute;right:-120px;top:-160px;
+    width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, #FFB98A, var(--orange) 70%);
+    opacity:.9;z-index:0;
+  }
+  .hero-deco.two{
+    right:60px;top:180px;width:220px;height:220px;
+    background:radial-gradient(circle at 30% 30%, #ffd9bd, var(--orange-dark) 75%);
+    opacity:.5;
+  }
+  .hero h1{
+    font-size:2.3rem;font-weight:700;color:var(--ink);line-height:1.25;
+  }
+  .hero h1 .accent{color:var(--orange);display:block;}
+  .hero p.lead{
+    margin-top:14px;color:var(--ink-soft);font-size:1rem;max-width:38ch;
+  }
+  .hero p.cta-line{
+    margin-top:18px;font-size:.95rem;color:var(--ink);
+  }
+  .hero p.cta-line b{color:var(--orange);font-weight:600;}
+
+  .hero-art{
+    position:relative;z-index:1;
+    aspect-ratio:4/3;border-radius:20px;overflow:hidden;
+    background:linear-gradient(160deg,#DCE7EC,#B9C9D1 60%,#9FB2BC);
+  }
+  .hero-art .building{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(0deg, rgba(6,38,59,.15), rgba(6,38,59,0) 55%),
+      repeating-linear-gradient(90deg, rgba(255,255,255,.35) 0 18px, rgba(255,255,255,.08) 18px 36px);
+    clip-path: polygon(8% 100%, 8% 30%, 30% 14%, 55% 22%, 62% 8%, 100% 20%, 100% 100%);
+  }
+  .hero-art .badge{
+    position:absolute;top:16px;left:16px;
+    background:rgba(255,255,255,.9);color:var(--orange);
+    font-weight:700;font-size:.75rem;padding:6px 12px;border-radius:999px;
+    letter-spacing:1px;
+  }
+  .hero-art .people{
+    position:absolute;left:0;right:0;bottom:0;height:46%;
+    display:flex;align-items:flex-end;justify-content:center;gap:6%;
+    padding:0 6%;
+  }
+  .hero-art .people i{
+    display:block;width:15%;aspect-ratio:1/2.1;border-radius:12px 12px 0 0;
+    background:linear-gradient(180deg,#fff,#E7ECEF 55%,var(--navy-2));
+    position:relative;
+  }
+  .hero-art .people i::before{
+    content:"";position:absolute;left:50%;top:-14%;translate:-50% 0;
+    width:44%;aspect-ratio:1;border-radius:50%;background:#F0C6A2;
+  }
+  .hero-art .people i:nth-child(2), .hero-art .people i:nth-child(4){background:linear-gradient(180deg,var(--orange),#fff 30%,#E7ECEF 65%,var(--navy-2));}
+
+  .service-row{
+    position:relative;z-index:2;
+    display:grid;grid-template-columns:repeat(5,1fr);gap:16px;
+    margin-top:-34px;padding-bottom:6px;
+  }
+  .service-card{
+    background:var(--card);border-radius:14px;padding:18px 10px;
+    text-align:center;box-shadow:0 14px 30px -18px rgba(6,38,59,.35);
+    border:1px solid var(--line);
+  }
+  .service-card .ic{
+    width:42px;height:42px;border-radius:50%;background:var(--orange-light);
+    color:var(--orange);display:flex;align-items:center;justify-content:center;
+    margin:0 auto 10px;
+  }
+  .service-card .ic svg{width:20px;height:20px;}
+  .service-card b{display:block;font-size:.86rem;font-weight:500;}
+  .service-card span{display:block;font-size:.72rem;color:var(--ink-soft);margin-top:2px;}
+
+  /* ---------- Section shell ---------- */
+  section{padding:46px 0;}
+  .section-title{
+    display:flex;align-items:center;gap:10px;font-size:1.1rem;font-weight:600;
+  }
+  .section-title::before{
+    content:"";width:5px;height:20px;background:var(--orange);border-radius:3px;
+  }
+  .see-all{font-size:.85rem;color:var(--orange);font-weight:500;display:flex;align-items:center;gap:4px;}
+
+  /* ---------- News + Shortcuts ---------- */
+  .news-grid{
+    display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:20px;align-items:start;
+  }
+  .panel{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;
+  }
+  .panel .panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+
+  .news-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);}
+  .news-item:last-child{border-bottom:0;padding-bottom:0;}
+  .news-thumb{
+    flex:none;width:108px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;
+    background:linear-gradient(160deg,var(--orange) 0%, var(--orange-dark) 100%);
+    position:relative;color:#fff;
+  }
+  .news-thumb .new-tag{
+    position:absolute;top:6px;left:6px;background:var(--navy);color:#fff;
+    font-size:.6rem;padding:2px 6px;border-radius:4px;letter-spacing:.5px;
+  }
+  .news-thumb .tcas{
+    position:absolute;left:8px;bottom:8px;line-height:1;
+  }
+  .news-thumb .tcas small{display:block;font-size:.6rem;letter-spacing:2px;font-weight:600;}
+  .news-thumb .tcas strong{display:block;font-size:1.5rem;font-weight:700;}
+  .news-body h4{font-size:.94rem;font-weight:500;line-height:1.4;}
+  .news-body time{display:block;font-size:.72rem;color:var(--ink-soft);margin:4px 0 6px;}
+  .news-body p{font-size:.8rem;color:var(--ink-soft);line-height:1.5;}
+  .news-body .more{font-size:.78rem;color:var(--orange);font-weight:500;margin-top:6px;display:inline-block;}
+
+  .shortcut-list{display:flex;flex-direction:column;gap:10px;}
+  .shortcut-list a{
+    display:flex;align-items:center;gap:12px;padding:12px 14px;
+    border:1px solid var(--line);border-radius:12px;font-size:.86rem;font-weight:500;
+    transition:border-color .15s, background .15s;
+  }
+  .shortcut-list a:hover{border-color:var(--orange);background:var(--orange-light);}
+  .shortcut-list .ic{
+    width:30px;height:30px;border-radius:8px;background:var(--orange-light);color:var(--orange);
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .shortcut-list .ic svg{width:16px;height:16px;}
+  .shortcut-list .chev{margin-left:auto;color:var(--ink-soft);}
+
+  .promo-card{
+    margin-top:18px;border-radius:16px;overflow:hidden;position:relative;
+    background:linear-gradient(135deg,#D8DEE1,#A7B4BA);
+    padding:20px;color:var(--navy);min-height:130px;
+  }
+  .promo-card .tag{
+    display:inline-block;background:var(--orange);color:#fff;font-size:.7rem;
+    padding:4px 10px;border-radius:999px;margin-bottom:8px;
+  }
+  .promo-card h5{font-size:.92rem;font-weight:600;line-height:1.4;max-width:70%;}
+
+  /* ---------- Calendar / TCAS banner ---------- */
+  .calendar-panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:20px;}
+  .tcas-banner{
+    margin-top:18px;border-radius:18px;overflow:hidden;
+    background:
+      radial-gradient(ellipse at 78% 15%, rgba(255,255,255,.18), transparent 45%),
+      linear-gradient(120deg, var(--navy) 0%, var(--teal-dark) 65%, var(--teal) 100%);
+    color:#fff;position:relative;padding:30px 26px 0;
+  }
+  .tcas-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+  .tcas-brand{display:flex;align-items:center;gap:10px;font-size:.72rem;opacity:.9;max-width:340px;line-height:1.4;}
+  .tcas-brand .anniv{
+    font-weight:800;font-size:1.4rem;color:var(--yellow);flex:none;
+  }
+  .tcas-headline{margin-top:18px;}
+  .tcas-headline h2{font-size:1.7rem;line-height:1.3;font-weight:600;}
+  .tcas-headline .tcas-num{
+    display:block;font-size:2.6rem;font-weight:800;
+    background:linear-gradient(90deg,#fff,#8CE0C9);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .tcas-sub{
+    margin-top:14px;display:inline-block;background:rgba(0,20,30,.45);
+    border:1px solid rgba(255,255,255,.25);border-radius:10px;
+    padding:12px 16px;font-size:.78rem;line-height:1.7;max-width:520px;
+  }
+  .tcas-sub em{color:var(--yellow);font-style:normal;}
+
+  .tcas-person{
+    position:absolute;right:26px;top:14px;width:220px;display:flex;justify-content:flex-end;
+  }
+  .tcas-person .bubble{
+    position:absolute;top:0;right:0;background:var(--navy);color:var(--yellow);
+    font-size:.7rem;font-weight:600;line-height:1.4;padding:10px 12px;border-radius:12px;
+    width:110px;text-align:center;
+  }
+  .tcas-person .figure{
+    margin-top:70px;width:160px;height:190px;border-radius:16px 16px 0 0;
+    background:linear-gradient(180deg,#fff 0 34%, var(--orange) 34% 55%, var(--navy-2) 55% 100%);
+  }
+
+  .tcas-table-wrap{margin-top:22px;background:rgba(255,255,255,.06);border-radius:16px 16px 0 0;padding-top:18px;}
+  table.tcas-table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;color:var(--ink);border-radius:14px 14px 0 0;overflow:hidden;min-width:640px;}
+  table.tcas-table thead th{
+    background:#EEF1F1;color:var(--navy);font-weight:500;font-size:.82rem;
+    padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);
+  }
+  table.tcas-table td{
+    padding:16px;font-size:.8rem;vertical-align:top;border-bottom:1px solid var(--line);color:var(--ink);
+  }
+  table.tcas-table td ul{padding-left:1.1em;list-style:disc;display:flex;flex-direction:column;gap:2px;}
+  table.tcas-table .round-badge{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    color:#fff;font-weight:600;border-radius:10px;padding:14px 8px;text-align:center;height:100%;min-width:78px;
+  }
+  table.tcas-table .round-badge small{font-size:.66rem;font-weight:400;opacity:.9;}
+  table.tcas-table .round-badge strong{font-size:1.5rem;line-height:1;}
+  .r1{background:var(--teal-dark);}
+  .r2{background:var(--yellow);color:var(--navy)!important;}
+  .r3{background:var(--blue);}
+  .r4{background:var(--pink);}
+  .confirm-date{color:var(--orange-dark);font-weight:600;display:flex;align-items:center;gap:6px;}
+  .confirm-date::before{content:"➜";color:var(--pink);}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--peach);margin-top:20px;border-top:1px solid var(--line);}
+  .footer-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;
+    padding:44px 0 30px;
+  }
+  .footer-grid h6{font-size:.72rem;color:var(--orange-dark);letter-spacing:.5px;margin-bottom:14px;font-weight:600;}
+  .footer-grid ul{display:flex;flex-direction:column;gap:9px;font-size:.82rem;color:var(--ink-soft);}
+  .foot-brand{display:flex;gap:12px;align-items:flex-start;}
+  .foot-brand .mark{
+    width:44px;height:44px;border-radius:50%;border:2px solid var(--orange);
+    color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;flex:none;
+  }
+  .foot-brand p{font-size:.78rem;color:var(--ink-soft);line-height:1.6;margin-top:4px;}
+  .foot-brand .tel{margin-top:10px;font-size:.85rem;color:var(--orange-dark);font-weight:600;display:flex;gap:6px;align-items:center;}
+
+  .foot-bar{background:var(--orange);color:#fff;font-size:.75rem;}
+  .foot-bar .wrap{display:flex;justify-content:space-between;padding:12px 0;flex-wrap:wrap;gap:6px;}
+  .foot-bar a{opacity:.9;}
+
+  @media (max-width: 880px){
+    .hero .wrap{grid-template-columns:1fr;padding-top:36px;}
+    .hero-art{order:-1;}
+    .service-row{grid-template-columns:repeat(3,1fr);margin-top:20px;}
+    .news-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    nav.main .links{display:none;}
+  }
+  @media (max-width:560px){
+    .service-row{grid-template-columns:repeat(2,1fr);}
+    .hero h1{font-size:1.7rem;}
+    .tcas-person{display:none;}
+    .footer-grid{grid-template-columns:1fr;}
+    .topbar .wrap{font-size:.7rem;justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a href="tel:029135000">📞 02-913-5000</a>
+      <span class="divider"></span>
+      <a href="#" class="btn-mini">ติดต่อเรา</a>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="wrap">
+      <a href="#" class="brand">
+        <span class="mark">KM<br>UTNB</span>
+        <span class="name">
+          <b>KMUTNB</b>
+          <span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+        </span>
+      </a>
+      <nav class="main">
+        <div class="links">
+          <a href="#">หน้าแรก</a>
+          <a href="#">เกี่ยวกับเรา</a>
+          <a href="#">หลักสูตร</a>
+        </div>
+        <a href="#" class="btn btn-outline">เข้าสู่ระบบ</a>
+        <a href="#" class="btn btn-solid">สมัครเรียน</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="padding:0;">
+    <div class="hero-deco"></div>
+    <div class="hero-deco two"></div>
+    <div class="wrap">
+      <div>
+        <h1>เปิดรับสมัคร<span class="accent">นักศึกษาใหม่ 2570</span></h1>
+        <p class="lead">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เปิดรับสมัครทุกระดับการศึกษา</p>
+        <p class="cta-line">สร้างอนาคตที่ใช่ ไปกับ <b>เรา</b></p>
+      </div>
+      <div class="hero-art">
+        <div class="building"></div>
+        <span class="badge">KMUTNB</span>
+        <div class="people">
+          <i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="service-row">
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg></div>
+          <b>ข่าวประชาสัมพันธ์</b><span>ประกาศจากมหาวิทยาลัย</span>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></div>
+          <b>ปฏิทินการศึกษา</b><span>กำหนดการรับสมัคร</span>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg></div>
+          <b>หลักสูตร</b><span>สาขาที่เปิดรับสมัคร</span>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></div>
+          <b>ติดต่อสอบถาม</b><span>ช่องทางการติดต่อ</span>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg></div>
+          <b>ทุนการศึกษา</b><span>ทุนสนับสนุนนักศึกษา</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="news-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <span class="section-title">ข่าวประชาสัมพันธ์</span>
+            <a href="#" class="see-all">ดูทั้งหมด ›</a>
+          </div>
+
+          <div class="news-item">
+            <div class="news-thumb">
+              <span class="new-tag">NEW</span>
+              <div class="tcas"><small>TCAS</small><strong>70</strong></div>
+            </div>
+            <div class="news-body">
+              <h4>ประกาศรับสมัครนักศึกษาใหม่ ระดับปริญญาตรี ปีการศึกษา 2570</h4>
+              <time>15 กันยายน 2569</time>
+              <p>เปิดรับสมัครทุกโครงการ ทุกคณะ ตรวจสอบคุณสมบัติและกำหนดการได้ที่นี่</p>
+              <a href="#" class="more">อ่านต่อ ›</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-thumb">
+              <span class="new-tag">NEW</span>
+              <div class="tcas"><small>TCAS</small><strong>70</strong></div>
+            </div>
+            <div class="news-body">
+              <h4>ปฏิทินการรับสมัครและสอบคัดเลือกทุกรอบ</h4>
+              <time>10 กันยายน 2569</time>
+              <p>รวมกำหนดการรับสมัครทั้ง 4 รอบ พร้อมช่วงเวลายืนยันสิทธิ์</p>
+              <a href="#" class="more">อ่านต่อ ›</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-thumb" style="background:linear-gradient(160deg,var(--teal),var(--teal-dark));">
+              <div class="tcas"><small>ทุนการศึกษา</small><strong style="font-size:1.05rem;">2570</strong></div>
+            </div>
+            <div class="news-body">
+              <h4>เปิดรับสมัครทุนการศึกษาสำหรับนักศึกษาใหม่</h4>
+              <time>5 กันยายน 2569</time>
+              <p>ทุนเรียนดี ทุนส่งเสริมการศึกษา และทุนกิจกรรม สมัครได้แล้ววันนี้</p>
+              <a href="#" class="more">อ่านต่อ ›</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel">
+            <div class="panel-head"><span class="section-title">เมนูลัด</span></div>
+            <div class="shortcut-list">
+              <a href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></svg></span>ปฏิทินการศึกษาประจำปี<span class="chev">›</span></a>
+              <a href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/></svg></span>ระเบียบการรับสมัคร<span class="chev">›</span></a>
+              <a href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>คำถามที่พบบ่อย (FAQ)<span class="chev">›</span></a>
+              <a href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></span>ติดต่อฝ่ายรับสมัคร<span class="chev">›</span></a>
+              <a href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.6 8.6 3 5 6.5 5 9 5 12 7 12 7s3-2 5.5-2C21 5 23.4 8.6 21.5 12.5 19 16.65 12 21 12 21Z"/></svg></span>แนะนำหลักสูตรที่ใช่สำหรับคุณ<span class="chev">›</span></a>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <span class="tag">แนะแนวการศึกษา</span>
+            <h5>ปรึกษาเส้นทางสู่รั้ว KMUTNB กับรุ่นพี่แนะแนว</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="calendar-panel">
+        <span class="section-title">ปฏิทิน</span>
+
+        <div class="tcas-banner">
+          <div class="tcas-top">
+            <div class="tcas-brand">
+              <span class="anniv">63</span>
+              <span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>King Mongkut's University of Technology North Bangkok</span>
+            </div>
+          </div>
+
+          <div class="tcas-headline">
+            <h2>กำหนดการ<br>รับสมัครนักศึกษา</h2>
+            <span class="tcas-num">TCAS 70</span>
+          </div>
+
+          <div class="tcas-sub">
+            ระดับประกาศนียบัตรวิชาชีพ (ปวช.) <br>
+            หลักสูตรเตรียมวิศวกรรมศาสตร์ ไทย–เยอรมัน <br>
+            ระดับวิศวกรรมศาสตร์และเทคโนโลยี <em>และระดับปริญญาตรี</em>
+          </div>
+
+          <div class="tcas-person">
+            <span class="bubble">ก้าวแรก<br>สู่อนาคต<br>ที่ใช่!</span>
+            <div class="figure"></div>
+          </div>
+
+          <div class="tcas-table-wrap overflow-x">
+            <table class="tcas-table">
+              <thead>
+                <tr>
+                  <th style="width:70px;"></th>
+                  <th>โครงการที่เปิดรับ</th>
+                  <th style="width:180px;">กำหนดการรับ</th>
+                  <th style="width:160px;">ยืนยันสิทธิ์<br><small style="font-weight:400;">(เฉลี่ย 4-5 วัน)</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="round-badge r1"><small>TCAS</small>รอบที่<strong>1</strong></div></td>
+                  <td>
+                    <ul>
+                      <li>โครงการโควตา/โครงการ Portfolio ครั้งที่ 1</li>
+                      <li>โครงการโควตา/โครงการ Portfolio ครั้งที่ 2</li>
+                      <li>โครงการนักกรรมเวลือดัั้งประเทศ</li>
+                    </ul>
+                  </td>
+                  <td>
+                    1 ก.ย. 69 – 10 ต.ค. 69<br>
+                    24 พ.ย. 69 – 5 ม.ค. 70<br>
+                    1 ก.ค. 69 – 11 ม.ค. 70
+                  </td>
+                  <td><span class="confirm-date">10 – 11 มี.ค. 70</span></td>
+                </tr>
+                <tr>
+                  <td><div class="round-badge r2"><small>TCAS</small>รอบที่<strong>2</strong></div></td>
+                  <td>
+                    <ul>
+                      <li>โครงการโควตาภูมิภาค</li>
+                      <li>โครงการรับตรงคณะ/วิทยาเขต</li>
+                      <li>โครงการความร่วมมือกับสถานประกอบการ</li>
+                    </ul>
+                  </td>
+                  <td>
+                    10 พ.ย. 69 – 28 ม.ค. 70<br>
+                    11 ม.ค. 70 – 15 ก.พ. 70<br>
+                    1 – 30 ม.ค. 70
+                  </td>
+                  <td><span class="confirm-date">3 – 4 พ.ค. 70</span></td>
+                </tr>
+                <tr>
+                  <td><div class="round-badge r3"><small>TCAS</small>รอบที่<strong>3</strong></div></td>
+                  <td>
+                    <ul>
+                      <li>Admission กลาง (ผ่านระบบ ทปอ.)</li>
+                      <li>เลือกอันดับผ่าน mytcas.com</li>
+                    </ul>
+                  </td>
+                  <td>
+                    7 – 15 พ.ค. 70<br>
+                    18 – 21 พ.ค. 70
+                  </td>
+                  <td><span class="confirm-date">22 – 23 พ.ค. 70</span></td>
+                </tr>
+                <tr>
+                  <td><div class="round-badge r4"><small>TCAS</small>รอบที่<strong>4</strong></div></td>
+                  <td>
+                    <ul>
+                      <li>โครงการรับตรงอิสระ (รอบเก็บตก)</li>
+                      <li>รับสมัครผ่านคณะ/วิทยาเขตโดยตรง</li>
+                    </ul>
+                  </td>
+                  <td>
+                    1 – 7 มิ.ย. 70<br>
+                    29 – 31 พ.ค. 70
+                  </td>
+                  <td><span class="confirm-date">7 – 8 มิ.ย. 70</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="foot-brand">
+          <span class="mark">KM<br>UTNB</span>
+          <div>
+            <b style="color:var(--orange-dark);">มหาวิทยาลัยเทคโนโลยี<br>พระจอมเกล้าพระนครเหนือ</b>
+            <p>1518 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง<br>เขตบางซื่อ กรุงเทพมหานคร 10800</p>
+            <p class="tel">📞 02-913-5000</p>
+          </div>
+        </div>
+        <div>
+          <h6>เกี่ยวกับมหาวิทยาลัย</h6>
+          <ul>
+            <li><a href="#">ประวัติความเป็นมา</a></li>
+            <li><a href="#">วิสัยทัศน์และพันธกิจ</a></li>
+            <li><a href="#">คณะและวิทยาเขต</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>สำหรับผู้สมัคร</h6>
+          <ul>
+            <li><a href="#">ขั้นตอนการสมัคร</a></li>
+            <li><a href="#">ค่าเทอม/ทุนการศึกษา</a></li>
+            <li><a href="#">คำถามที่พบบ่อย</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>ติดตามเรา</h6>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <div class="wrap">
+        <span>© 2569 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ สงวนลิขสิทธิ์</span>
+        <a href="#">นโยบายความเป็นส่วนตัว | ข้อกำหนดการใช้งาน</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
