@@ -6,160 +6,148 @@
     <title>KMUTNB</title>
     <link rel="stylesheet" href="style.css">
 
-  <!-- <style>
-    .site-footer {
-      background: #FDF3EE;
-      border-top: 1px solid #ECE7E2;
-      font-family: 'Kanit', sans-serif;
-    }
-
-    .footer-grid {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 44px 24px 30px;
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1fr;
-      gap: 28px;
-    }
-
-    .footer-brand {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-    }
-
-    .footer-logo {
-      width: 72px;
-      height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: none;
-    }
-
-    .footer-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .footer-brand-title {
-      color: #D6540F;
-    }
-
-    .footer-address {
-      font-size: 12.48px;
-      color: #6B7280;
-      line-height: 1.6;
-      margin-top: 4px;
-    }
-
-    .footer-tel {
-      margin-top: 10px;
-      font-size: 13.6px;
-      color: #D6540F;
-      font-weight: 600;
-    }
-
-    .footer-col h6 {
-      font-size: 11.52px;
-      color: #D6540F;
-      letter-spacing: .5px;
-      margin-bottom: 14px;
-      font-weight: 600;
-    }
-
-    .footer-col ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-      font-size: 13.12px;
-      color: #6B7280;
-    }
-
-    .footer-col a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .footer-bar {
-      background: #F1651E;
-      color: #fff;
-      font-size: 12px;
-    }
-
-    .footer-bar-inner {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 12px 24px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-  </style> -->
-
 </head>
 
 <body>
-  <footer class="site-footer">
-    <div class="footer-grid">
+  <?php include("navbar.php") ?>
 
-      <div class="footer-brand">
-        <span class="footer-logo">
-          <img src="img/logo_kmutnb.png" alt="KMUTNB">
-        </span>
-        <div>
-          <b class="footer-brand-title">มหาวิทยาลัยเทคโนโลยี<br>พระจอมเกล้าพระนครเหนือ</b>
-          <p class="footer-address">
-            1518 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง<br>เขตบางซื่อ กรุงเทพมหานคร 10800
-          </p>
-          <p class="footer-tel"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-              <title>baseline-phone</title>
-              <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
-            </svg> 02-913-5000</p>
+<section class="container content-section" style="margin-top: 90px;">
+
+    <div class="content-container">
+        <div class="news-box">
+            <div class="section-title">
+                <h2>ข่าวประชาสัมพันธ์</h2>
+                <a href="#">ดูทั้งหมด ></a>
+            </div>
+            <article class="news-item">
+                <div class="news-image">
+                    <img src="img/tcas70.png" alt="TCAS 70">
+                </div>
+                <div class="news-content">
+                    <h3>
+                        ประกาศรับสมัครนักศึกษาใหม่ ประจำปีการศึกษา 2570
+                    </h3>
+                    <p class="news-date">
+                        23 กรกฎาคม 2569
+                    </p>
+                    <p>
+                        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+                        เปิดรับสมัครนักศึกษาใหม่ ประจำปีการศึกษา 2570
+                        สามารถดูรายละเอียดและกำหนดการรับสมัครได้ที่นี่
+                    </p>
+                    <a href="#" class="read-more">
+                        อ่านต่อ >
+                    </a>
+                </div>
+            </article>
+            <article class="news-item">
+                <div class="news-image">
+                    <img src="img/tcas70.png" alt="TCAS 70">
+                </div>
+                <div class="news-content">
+                    <h3>
+                        กำหนดการรับสมัครและรายละเอียด
+                    </h3>
+                    <p class="news-date">
+                        20 กรกฎาคม 2569
+                    </p>
+                    <p>
+                        ตรวจสอบรายละเอียดการรับสมัคร
+                        คุณสมบัติของผู้สมัคร และขั้นตอนการสมัคร
+                        เพื่อเตรียมความพร้อมสำหรับการเข้าศึกษาต่อ
+                    </p>
+                    <a href="#" class="read-more">
+                        อ่านต่อ >
+                    </a>
+                </div>
+            </article>
+            <article class="news-item">
+                <div class="news-image">
+                    <img src="img/tcas70.png" alt="TCAS 70">
+                </div>
+                <div class="news-content">
+                    <h3>
+                        แนะนำหลักสูตรใหม่ ประจำปีการศึกษา 2570
+                    </h3>
+                    <p class="news-date">
+                        15 กรกฎาคม 2569
+                    </p>
+                    <p>
+                        พบกับหลักสูตรที่น่าสนใจและตอบโจทย์การเรียนรู้
+                        ในยุคดิจิทัล พร้อมเตรียมความพร้อมสู่การเรียนต่อ
+                        และการทำงานในอนาคต
+                    </p>
+                    <a href="#" class="read-more">
+                        อ่านต่อ >
+                    </a>
+                </div>
+            </article>
         </div>
-      </div>
+        <div class="right-content">
+            <div class="shortcut-box">
+                <div class="side-title">
+                    <h2>เมนูลัด</h2>
+                </div>
+                <a href="#" class="shortcut-item">
+                    <span>▣</span>
+                    <p>ขั้นตอนการชำระเงินค่าสมัคร</p>
+                    <b>></b>
+                </a>
 
-      <div class="footer-col">
-        <h6>สำหรับผู้สมัคร</h6>
-        <ul>
-          <li><a href="#">ปฏิทินการรับสมัคร</a></li>
-          <li><a href="#">รับสมัครนักศึกษา</a></li>
-          <li><a href="#">หลักสูตรที่เปิดสอน</a></li>
-          <li><a href="#">ทุนการศึกษา</a></li>
-          <li><a href="#">คำถามที่พบบ่อย</a></li>
-        </ul>
-      </div>
+                <a href="#" class="shortcut-item">
+                    <span>▱</span>
+                    <p>เอกสารประกอบการสมัครเรียน</p>
+                    <b>></b>
+                </a>
 
-      <div class="footer-col">
-        <h6>เกี่ยวกับ มจพ.</h6>
-        <ul>
-          <li><a href="#">ประวัติมหาวิทยาลัย</a></li>
-          <li><a href="#">คณะ/หน่วยงาน</a></li>
-          <li><a href="#">งานวิจัยและนวัฒกรรม</a></li>
-          <li><a href="#">ข่าวสาร</a></li>
-          <li><a href="#">ติดต่อเรา</a></li>
-        </ul>
-      </div>
+                <a href="#" class="shortcut-item">
+                    <span>?</span>
+                    <p>คำถามที่พบบ่อย (FAQ)</p>
+                    <b>></b>
+                </a>
 
-      <div class="footer-col">
-        <h6>ติดตามเรา</h6>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-        </ul>
-      </div>
+                <a href="#" class="shortcut-item">
+                    <span>□</span>
+                    <p>ติดต่อฝ่ายบริการการศึกษา</p>
+                    <b>></b>
+                </a>
+
+                <a href="#" class="shortcut-item">
+                    <span>⌖</span>
+                    <p>แผนที่และการเดินทาง มจพ.</p>
+                    <b>></b>
+                </a>
+
+            </div>
+
+            <div class="guidance-box">
+
+                <div class="guidance-overlay">
+
+                    <h2>
+                        แนะแนวการศึกษา
+                    </h2>
+
+                    <p>
+                        มองหาเส้นทางการเรียนที่เหมาะกับคุณ?
+                        พบกับหลักสูตรและข้อมูลการศึกษาของ มจพ.
+                    </p>
+
+                    <a href="#" class="guidance-button">
+                        ปรึกษาอาจารย์
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="footer-bar">
-      <div class="footer-bar-inner">
-        <span>© 2569 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ สงวนลิขสิทธิ์</span>
-        นโยบายความเป็นส่วนตัว | ข้อกำหนดการใช้งาน
-      </div>
-    </div>
-  </footer>
+</section>
+  
+  <?php include("footer.php") ?>
 </body>
 
 </html>

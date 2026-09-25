@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #F3F1F0;
+    background-color: #f5f5f5;
     font-family: Inter, sans-serif;
 }
 
@@ -12,18 +12,16 @@ body {
 /* ==================== Container ==================== */
 
 .container {
-    width: calc(100% - 250px);
+    width: 88%;
     height: 100%;
     margin: 0 auto;
 }
-
 
 /* ==================== Top Navbar ==================== */
 
 .top-navbar {
     width: 100%;
     height: 39px;
-
     background-color: #ff7011;
 }
 
@@ -35,7 +33,6 @@ body {
 
 .top-bar-contact {
     height: 100%;
-
     display: flex;
     align-items: center;
 }
@@ -51,11 +48,6 @@ body {
     background-color: #ff7011;
 }
 
-.phone-icon {
-    width: 20px;
-    height: 20px;
-}
-
 .phone-number {
     color: #ffffff;
     font-size: 12px;
@@ -66,7 +58,6 @@ body {
 .top-divider {
     width: 1px;
     height: 24px;
-
     background-color: #ffffff;
 }
 
@@ -99,11 +90,14 @@ body {
 }
 
 .navbar .container {
+    width: 88%;
+    height: 100%;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 
 /* ==================== Logo ==================== */
 
@@ -141,21 +135,17 @@ body {
 
 .logo-title {
     color: #e55a1d;
-
     font-family: Outfit, sans-serif;
     font-size: 18px;
     font-weight: 800;
-
     line-height: 23px;
 }
 
 .logo-subtitle {
     color: #4b5563;
-
     font-family: Inter, sans-serif;
     font-size: 11px;
     font-weight: 600;
-
     line-height: 13px;
     white-space: nowrap;
 }
@@ -186,10 +176,6 @@ body {
     font-weight: 700;
 }
 
-.nav-news {
-    color: #1f2937;
-    font-weight: 500;
-}
 
 
 /* ==================== Buttons ==================== */
@@ -230,20 +216,452 @@ body {
 }
 
 
-/* ==================== FOOTER ==================== */
+/* ==================== Hero ==================== */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: 560px;
+
+    background-color: #ffffff;
+
+    overflow: visible;
+}
 
 
-.site-footer {
-      background: #FDF3EE;
-      border-top: 1px solid #ECE7E2;
+/* ==================== Hero Content ==================== */
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 30px;
+}
+
+
+/* ==================== Hero Image ==================== */
+
+.hero-image {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ==================== Menu Cards ==================== */
+
+.menu-cards {
+    position: absolute;
+
+    left: 6%;
+    right: 6%;
+    bottom: -65px;
+
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+
+    z-index: 10;
+}
+
+
+/* ==================== Menu Card ==================== */
+
+.menu-card {
+    flex: 1;
+
+    min-width: 0;
+    height: 200px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==================== Menu Icon ==================== */
+
+.menu-icon {
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #fff4ef;
+
+    color: #e55a1d;
+
+    font-size: 18px;
+}
+
+/* ==================== Menu Title ==================== */
+
+.menu-card h3 {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+/* ==================== Menu Description ==================== */
+
+.menu-card p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 10px;
+
+    text-align: center;
+}
+
+/* ==================== Responsive ==================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: calc(100% - 30px);
     }
 
-.footer-grid {
+    .navbar .container {
+        gap: 20px;
+    }
+
+    .logo-subtitle {
+        display: none;
+    }
+
+    .nav-menu {
+        gap: 5px;
+    }
+
+    .menu-cards {
+        left: 15px;
+        right: 15px;
+        gap: 8px;
+    }
+
+    .menu-card {
+        padding: 10px;
+    }
+
+    .menu-card h3 {
+        font-size: 12px;
+    }
+
+    .menu-card p {
+        font-size: 9px;
+    }
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content-section {
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+.content-container {
+    padding: 0 16px;
+    display: flex;
+    gap: 28px;
+}
+
+/* =========================
+   ข่าวประชาสัมพันธ์
+========================= */
+
+.news-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    flex: 2;
+}
+
+/* =========================
+   หัวข้อ
+========================= */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.section-title h2 {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #222222;
+    border-left: 4px solid #f1651e;
+}
+
+.section-title a {
+    color: #f1651e;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* =========================
+   ข่าวแต่ละรายการ
+========================= */
+
+.news-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+/* =========================
+   รูปข่าว
+========================= */
+
+.news-image {
+    width: 140px;
+    height: 86px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================
+   เนื้อหาข่าว
+========================= */
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    color: #222222;
+}
+
+.news-date {
+    margin: 0 0 6px 0;
+    font-size: 11px;
+    color: #a0a0a0;
+}
+
+.news-content p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 5px;
+    color: #f1651e;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* =========================
+   ด้านขวา
+========================= */
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+/* =========================
+   เมนูลัด
+========================= */
+
+.shortcut-box {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.side-title {
+    margin-bottom: 12px;
+}
+
+.side-title h2 {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 17px;
+    border-left: 4px solid #f1651e;
+}
+
+/* =========================
+   ปุ่มเมนูลัด
+========================= */
+
+.shortcut-item {
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.shortcut-item span {
+    width: 24px;
+    color: #f1651e;
+    font-size: 14px;
+}
+
+.shortcut-item p {
+    flex: 1;
+    margin: 0;
+    font-size: 11px;
+}
+
+.shortcut-item b {
+    color: #9ca3af;
+    font-size: 18px;
+}
+
+/* =========================
+   แนะแนวการศึกษา
+========================= */
+
+.guidance-box {
+    height: 174px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: url("img/guidance.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.guidance-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.guidance-overlay h2 {
+    margin: 0 0 4px 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.guidance-overlay p {
+    width: 70%;
+    margin: 0 0 14px 0;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.guidance-button {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #f1651e;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 800px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-item {
+        gap: 12px;
+    }
+
+    .news-image {
+        width: 120px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 500px) {
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-image {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.site-footer {
+    background: #FDF3EE;
+    border-top: 1px solid #ECE7E2;
+    margin-top: auto
+}
+
+.footer-flex {
     max-width: 1180px;
-    margin: 0 auto;
+    /* margin: auto; */
     padding: 44px 24px 30px;
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 28px;
 }
 
@@ -251,6 +669,7 @@ body {
     display: flex;
     gap: 12px;
     align-items: flex-start;
+    flex: 1.4 1 280px;
 }
 
 .footer-logo {
@@ -286,12 +705,17 @@ body {
     font-weight: 600;
 }
 
+.footer-col {
+    flex: 1 1 160px;
+}
+
 .footer-col h6 {
     font-size: 11.52px;
     color: #D6540F;
     letter-spacing: .5px;
     margin-bottom: 14px;
     font-weight: 600;
+
 }
 
 .footer-col ul {
@@ -310,14 +734,13 @@ body {
 }
 
 .footer-bar {
+    width: 100%;
     background: #F1651E;
     color: #fff;
     font-size: 12px;
 }
 
 .footer-bar-inner {
-    max-width: 1180px;
-    margin: 0 auto;
     padding: 12px 24px;
     display: flex;
     justify-content: space-between;
