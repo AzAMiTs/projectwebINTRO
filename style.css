@@ -63,12 +63,10 @@ body {
 
 .contact-section {
     height: 100%;
-    padding: 0 20px;
-
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #ff7011;
 }
 
@@ -401,7 +399,7 @@ body {
 }
 
 .content-container {
-    padding: 0 16px;
+    /* padding: 0 16px; */
     display: flex;
     gap: 28px;
 }
@@ -615,6 +613,38 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-size: 11px;
+}
+
+/* =========================
+   เนื้อหาปฏิทิน
+========================= */
+
+.calendar-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.calendar-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+    border-left: 4px solid #f1651e;
+}
+
+.calendar-image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar-image img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* =========================

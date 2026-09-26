@@ -85,7 +85,7 @@
         </div>
 
     </nav>
-    <section class="hero">
+    <section class="hero" style="margin-bottom: 80px;">
 
         <div class="hero-image">
             <img src="img/BGnew.png" alt="KMUTNB">
@@ -164,7 +164,7 @@
 
         </div>
 
-    </section>
+    </section >
 
 </body>
 
