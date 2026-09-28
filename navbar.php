@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +65,7 @@
 
 
             <div class="nav-menu">
-                <a href="#" class="nav-link nav-home">
+                <a href="index.php" class="nav-link nav-home">
                     หน้าแรก
                 </a>
 
@@ -92,8 +91,7 @@
         </div>
 
         <div class="menu-cards">
-
-            <div class="menu-card">
+            <a href="#" class="menu-card">
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <title>file</title>
@@ -105,9 +103,9 @@
                 </div>
                 <h3>เข้าสู่ระบบนักเรียน</h3>
                 <p>การเข้าสู่ระบบสำหรับนักเรียน</p>
-            </div>
+            </a>
 
-            <div class="menu-card">
+            <a href="#" class="menu-card">
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                         <title>calendar-outline</title>
@@ -127,9 +125,9 @@
                 </div>
                 <h3>การรับสมัคร</h3>
                 <p>ตารางการรับสมัครนักเรียน</p>
-            </div>
+            </a>
+            <a href="tuition.php" class="menu-card">
 
-            <div class="menu-card">
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                         <title>bank</title>
@@ -138,9 +136,12 @@
                 </div>
                 <h3>คณะและสาขา</h3>
                 <p>รายละเอียดคณะและสาขาวิชา</p>
-            </div>
 
-            <div class="menu-card">
+            </a>
+
+
+            <a href="#" class="menu-card">
+
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <title>card</title>
@@ -149,9 +150,9 @@
                 </div>
                 <h3>กำหนดการ</h3>
                 <p>รายละเอียดกำหนดการ</p>
-            </div>
+            </a>
 
-            <div class="menu-card">
+            <a href="contact.php" class="menu-card">
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <title>help-circle</title>
@@ -160,11 +161,11 @@
                 </div>
                 <h3>ข้อมูลติดต่อ</h3>
                 <p>รายละเอียดช่องทางติดต่อ</p>
-            </div>
+            </a>
 
         </div>
 
-    </section >
+    </section>
 
 </body>
 
