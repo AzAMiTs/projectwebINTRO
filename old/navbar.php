@@ -69,17 +69,17 @@
                     หน้าแรก
                 </a>
 
-                <a href="#" class="nav-link nav-news">
+                <!-- <a href="#" class="nav-link nav-news">
                     ข่าวประกาศ
-                </a>
+                </a> -->
 
                 <button class="login-button">
                     เข้าสู่ระบบ
                 </button>
 
-                <button class="register-button">
+                <!-- <button class="register-button">
                     ลงทะเบียน
-                </button>
+                </button> -->
             </div>
         </div>
 
@@ -105,7 +105,7 @@
                 <p>การเข้าสู่ระบบสำหรับนักเรียน</p>
             </a>
 
-            <a href="#date" class="menu-card">
+            <a href="index.php" class="menu-card">
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                         <title>calendar-outline</title>
@@ -123,8 +123,8 @@
                         <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M464 160H48" />
                     </svg>
                 </div>
-                <h3>การรับสมัคร</h3>
-                <p>ตารางการรับสมัครนักเรียน</p>
+                <h3>การสมัครเรียนต่อ</h3>
+                <p>ตารางรอบเวลาเปิดรับสมัครเรียน</p>
             </a>
             <a href="#" class="menu-card">
 

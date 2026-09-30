@@ -163,7 +163,7 @@
 
     <section class="container content-section">
         <div class="calendar-box">
-            <span class="calendar-label" id="date">ปฏิทิน</span>
+            <span class="calendar-label">ปฏิทิน</span>
             <div class="calendar-image">
                 <img src="img/Timeline2570.jpg" alt="ปฏิทินการรับสมัครนักศึกษา TCAS 70">
             </div>
