@@ -7,7 +7,7 @@
 
     <title>KMUTNB</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -69,17 +69,16 @@
                     หน้าแรก
                 </a>
 
-                <a href="#" class="nav-link nav-news">
-                    ข่าวประกาศ
+                <a href="login.php">
+                    <button class="login-button">
+                        เข้าสู่ระบบ
+                    </button>
                 </a>
-
-                <button class="login-button">
-                    เข้าสู่ระบบ
-                </button>
-
-                <button class="register-button">
-                    ลงทะเบียน
-                </button>
+                <a href="register.php">
+                    <button class="register-button">
+                        ลงทะเบียน
+                    </button>
+                </a>
             </div>
         </div>
 
@@ -126,7 +125,7 @@
                 <h3>การรับสมัคร</h3>
                 <p>ตารางการรับสมัครนักเรียน</p>
             </a>
-            <a href="#" class="menu-card">
+            <a href="faculty.php" class="menu-card">
 
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">

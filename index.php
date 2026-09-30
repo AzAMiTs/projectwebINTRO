@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KMUTNB</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -165,7 +166,7 @@
         <div class="calendar-box">
             <span class="calendar-label" id="date">ปฏิทิน</span>
             <div class="calendar-image">
-                <img src="img/Timeline2570.jpg" alt="ปฏิทินการรับสมัครนักศึกษา TCAS 70">
+                <img src="img/timel.png" alt="ปฏิทินการรับสมัครนักศึกษา TCAS 70">
             </div>
         </div>
     </section>

@@ -1019,14 +1019,14 @@ a {
 /* =========================
    ข้อมูลติดต่อ (contact.php)
 ========================= */
- 
+
 .contact-box {
     background: #ffffff;
     border-radius: 14px;
     padding: 20px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
 }
- 
+
 .contact-title {
     margin: 0 0 14px 0;
     padding-left: 10px;
@@ -1035,19 +1035,19 @@ a {
     color: #222222;
     border-left: 4px solid #f1651e;
 }
- 
+
 .contact-info {
     padding-left: 10px;
     margin-bottom: 14px;
 }
- 
+
 .contact-info p {
     margin: 0 0 6px 0;
     font-size: 13px;
     line-height: 1.6;
     color: #444444;
 }
- 
+
 .contact-facebook {
     display: flex;
     align-items: center;
@@ -1060,7 +1060,7 @@ a {
     font-weight: 600;
     text-decoration: none;
 }
- 
+
 .fb-icon {
     width: 28px;
     height: 28px;
@@ -1072,40 +1072,384 @@ a {
     background: #374151;
     color: #ffffff;
 }
- 
+
 .contact-map {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
 }
- 
+
 .contact-map iframe {
     display: block;
     width: 100%;
     height: 380px;
     border: 0;
 }
- 
+
 .map-open-btn {
     position: absolute;
     top: 12px;
     left: 12px;
     z-index: 2;
- 
+
     display: flex;
     align-items: center;
     gap: 5px;
- 
+
     padding: 7px 12px;
- 
+
     background: #ffffff;
     border-radius: 6px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
- 
+
     color: #1a73e8;
     font-size: 12px;
     font-weight: 600;
     text-decoration: none;
 }
- 
 
+/* =========================
+   SYSTEM LOGIN
+   เพิ่มใหม่ ไม่ทับ CSS เดิม
+========================= */
+
+.system-login-page {
+    width: 100%;
+    min-height: 550px;
+    background: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 20px;
+}
+
+.system-login-box {
+    width: 380px;
+    background: #ffffff;
+
+    padding: 28px 30px 24px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+.system-login-box h2 {
+    margin: 0 0 22px;
+
+    text-align: center;
+
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.system-login-box label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #333333;
+    font-size: 12px;
+}
+
+.system-login-box>input {
+    width: 100%;
+    height: 36px;
+
+    margin-bottom: 14px;
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    background: #eef5fc;
+    border: 1px solid #d8e1eb;
+    border-radius: 4px;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+.system-password-box {
+    position: relative;
+}
+
+.system-password-box input {
+    width: 100%;
+    height: 36px;
+
+    margin-bottom: 14px;
+    padding: 0 35px 0 12px;
+
+    box-sizing: border-box;
+
+    background: #eef5fc;
+    border: 1px solid #d8e1eb;
+    border-radius: 4px;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+.system-password-box span {
+    position: absolute;
+
+    right: 12px;
+    top: 9px;
+
+    color: #666666;
+    font-size: 11px;
+}
+
+.system-login-submit {
+    width: 100%;
+    height: 38px;
+
+    margin-top: 2px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #ad3c24;
+    color: #ffffff;
+
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.system-forgot {
+    display: block;
+
+    margin-top: 14px;
+
+    text-align: center;
+
+    color: #ad3c24;
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+.system-register {
+    margin: 6px 0 0;
+
+    text-align: center;
+
+    color: #888888;
+    font-size: 10px;
+}
+
+.system-register a {
+    color: #ad3c24;
+    text-decoration: none;
+}
+
+/* =========================
+   REGISTER PAGE
+   ========================= */
+
+.register-page {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 25px 0 25px;
+}
+
+.register-box {
+    width: 82%;
+    margin: 0 auto;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+/* หัวข้อ */
+.register-title {
+    height: 42px;
+    padding: 11px 18px;
+    box-sizing: border-box;
+
+    background: #9f321f;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ฟอร์ม */
+.register-form {
+    width: 700px;
+    margin: 35px auto 0;
+    padding-bottom: 45px;
+}
+
+.register-row {
+    display: grid;
+    grid-template-columns: 190px 250px 1fr;
+    align-items: center;
+
+    min-height: 42px;
+    margin-bottom: 12px;
+
+    font-size: 13px;
+}
+
+.register-row label {
+    width: auto;
+    margin-right: 15px;
+
+    text-align: right;
+
+    color: #333333;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ช่องกรอกทุกช่อง */
+.register-row>input,
+.register-input-password {
+    width: 250px;
+}
+
+/* Input */
+.register-row>input,
+.register-input-password input {
+    height: 34px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    font-size: 12px;
+    outline: none;
+}
+
+/* Password */
+.register-input-password {
+    position: relative;
+}
+
+.register-input-password input {
+    width: 100%;
+    padding-right: 35px;
+}
+
+.register-input-password span {
+    position: absolute;
+
+    right: 10px;
+    top: 9px;
+
+    color: #777777;
+    font-size: 11px;
+}
+
+/* ข้อความด้านขวา */
+.register-row small {
+    margin-left: 15px;
+
+    color: #777777;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+/* ปุ่ม */
+.register-submit {
+    display: block;
+
+    width: 90px;
+    height: 38px;
+
+    margin: 22px auto 0;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #9f321f;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* =========================
+   คณะและสาขา (faculty.php)
+========================= */
+
+.faculty-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px 40px 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faculty-section {
+    margin-bottom: 36px;
+}
+
+.faculty-section:last-child {
+    margin-bottom: 0;
+}
+
+.faculty-title {
+    margin: 0 0 22px 0;
+    padding-left: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #111111;
+    border-left: 4px solid #f1651e;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 28px;
+}
+
+.faculty-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.faculty-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #d9d9d9;
+}
+
+.faculty-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faculty-thumb-empty {
+    background: #d9d9d9;
+}
+
+.faculty-item p {
+    margin: 12px 0 0 0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #111111;
+}
