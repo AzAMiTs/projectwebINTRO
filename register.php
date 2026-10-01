@@ -133,9 +133,9 @@
                     <input type="email" placeholder="email@kmutnb.ac.th">
                 </div>
 
-                <button type="button" class="register-submit">
+                <a href="login.php"><button type="button" class="register-submit">
                     ลงทะเบียน
-                </button>
+                </button></a>
 
             </div>
 

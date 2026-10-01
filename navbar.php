@@ -90,7 +90,7 @@
         </div>
 
         <div class="menu-cards">
-            <a href="#" class="menu-card">
+            <a href="login.php" class="menu-card">
                 <div class="menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                         <title>file</title>

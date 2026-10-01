@@ -8,6 +8,74 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+<style>
+    .faculty-box {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 32px 40px 40px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .faculty-section {
+        margin-bottom: 36px;
+    }
+
+    .faculty-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .faculty-title {
+        margin: 0 0 22px 0;
+        padding-left: 10px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #111111;
+        border-left: 4px solid #f1651e;
+    }
+
+    .faculty-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+        row-gap: 28px;
+    }
+
+    .faculty-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .faculty-thumb {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #d9d9d9;
+    }
+
+    .faculty-thumb img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .faculty-thumb-empty {
+        background: #d9d9d9;
+    }
+
+    .faculty-item p {
+        margin: 12px 0 0 0;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: #111111;
+    }
+</style>
 
 <body>
     <?php include("navbar.php") ?>

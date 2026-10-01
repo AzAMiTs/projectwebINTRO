@@ -75,9 +75,9 @@
                     </button>
                 </a>
                 <a href="register.php">
-                <button class="register-button">
-                    ลงทะเบียน
-                </button>
+                    <button class="register-button">
+                        ลงทะเบียน
+                    </button>
                 </a>
             </div>
         </div>
@@ -98,16 +98,18 @@
                 <input type="password" placeholder="กรอกรหัสผ่าน">
             </div>
 
-            <button type="button" class="system-login-submit">
-                เข้าสู่ระบบ
-            </button>
+            <a href="apply.php">
+                <button type="button" class="system-login-submit">
+                    เข้าสู่ระบบ
+                </button>
+            </a>
 
             <a href="#" class="system-forgot">
                 ลืมรหัสผ่านหรือไม่?
             </a>
 
             <p class="system-register">
-                สำหรับผู้ใช้ที่ยังไม่เคย <a href="#">สมัครที่นี่</a>
+                สำหรับผู้ใช้ที่ยังไม่เคย <a href="register.php">สมัครที่นี่</a>
             </p>
 
         </div>

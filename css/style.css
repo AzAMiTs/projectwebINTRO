@@ -1019,14 +1019,14 @@ a {
 /* =========================
    ข้อมูลติดต่อ (contact.php)
 ========================= */
-
+ 
 .contact-box {
     background: #ffffff;
     border-radius: 14px;
     padding: 20px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
 }
-
+ 
 .contact-title {
     margin: 0 0 14px 0;
     padding-left: 10px;
@@ -1035,19 +1035,19 @@ a {
     color: #222222;
     border-left: 4px solid #f1651e;
 }
-
+ 
 .contact-info {
     padding-left: 10px;
     margin-bottom: 14px;
 }
-
+ 
 .contact-info p {
     margin: 0 0 6px 0;
     font-size: 13px;
     line-height: 1.6;
     color: #444444;
 }
-
+ 
 .contact-facebook {
     display: flex;
     align-items: center;
@@ -1060,7 +1060,7 @@ a {
     font-weight: 600;
     text-decoration: none;
 }
-
+ 
 .fb-icon {
     width: 28px;
     height: 28px;
@@ -1072,45 +1072,44 @@ a {
     background: #374151;
     color: #ffffff;
 }
-
+ 
 .contact-map {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
 }
-
+ 
 .contact-map iframe {
     display: block;
     width: 100%;
     height: 380px;
     border: 0;
 }
-
+ 
 .map-open-btn {
     position: absolute;
     top: 12px;
     left: 12px;
     z-index: 2;
-
+ 
     display: flex;
     align-items: center;
     gap: 5px;
-
+ 
     padding: 7px 12px;
-
+ 
     background: #ffffff;
     border-radius: 6px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
-
+ 
     color: #1a73e8;
     font-size: 12px;
     font-weight: 600;
     text-decoration: none;
 }
-
+ 
 /* =========================
-   SYSTEM LOGIN
-   เพิ่มใหม่ ไม่ทับ CSS เดิม
+   LOGIN
 ========================= */
 
 .system-login-page {
@@ -1157,7 +1156,7 @@ a {
     font-size: 12px;
 }
 
-.system-login-box>input {
+.system-login-box > input {
     width: 100%;
     height: 36px;
 
@@ -1310,13 +1309,13 @@ a {
 }
 
 /* ช่องกรอกทุกช่อง */
-.register-row>input,
+.register-row > input,
 .register-input-password {
     width: 250px;
 }
 
 /* Input */
-.register-row>input,
+.register-row > input,
 .register-input-password input {
     height: 34px;
 
@@ -1381,75 +1380,4 @@ a {
     font-weight: 600;
 
     cursor: pointer;
-}
-
-/* =========================
-   คณะและสาขา (faculty.php)
-========================= */
-
-.faculty-box {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 32px 40px 40px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.faculty-section {
-    margin-bottom: 36px;
-}
-
-.faculty-section:last-child {
-    margin-bottom: 0;
-}
-
-.faculty-title {
-    margin: 0 0 22px 0;
-    padding-left: 10px;
-    font-size: 26px;
-    font-weight: 700;
-    color: #111111;
-    border-left: 4px solid #f1651e;
-}
-
-.faculty-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 24px;
-    row-gap: 28px;
-}
-
-.faculty-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.faculty-thumb {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #d9d9d9;
-}
-
-.faculty-thumb img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.faculty-thumb-empty {
-    background: #d9d9d9;
-}
-
-.faculty-item p {
-    margin: 12px 0 0 0;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #111111;
 }
